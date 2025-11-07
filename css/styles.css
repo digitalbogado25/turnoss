@@ -1,0 +1,149 @@
+/* style.css - Diseño profesional para Clínica Villa Albertina */
+
+/* === Paleta de Colores === */
+:root {
+    /* Base: Blanco y Gris Claro (Limpieza y Simplicidad) */
+    --color-fondo: #f4f6f9; /* Fondo general muy suave */
+    --color-blanco: #ffffff;
+    --color-gris-claro: #e9ecef; /* Separadores y fondos suaves */
+    
+    /* Primario: Azul (Confianza, Profesionalismo, Calma) */
+    --color-primario-base: #007bff; /* Azul clásico */
+    --color-primario-oscuro: #0056b3; 
+
+    /* Secundario: Verde (Salud, Bienestar, Éxito de la acción) */
+    --color-secundario-base: #28a745; /* Verde de Bootstrap/Salud */
+    --color-secundario-whatsapp: #25D366; /* Verde de WhatsApp para el botón */
+    
+    /* Importante/Alerta (Advertencia/Importante) */
+    --color-alerta: #ffc107; /* Amarillo suave */
+}
+
+/* === Estilos Base === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    line-height: 1.6;
+}
+
+/* === Navegación y Encabezados === */
+.navbar {
+    background-color: var(--color-blanco) !important;
+    border-bottom: 1px solid var(--color-gris-claro);
+}
+
+.navbar-brand {
+    color: var(--color-primario-oscuro) !important;
+    font-weight: 700;
+}
+
+.display-4, h1 {
+    color: var(--color-primario-base) !important;
+    font-weight: 600;
+}
+
+/* === Contenedor Principal y Formulario === */
+.card {
+    border: none; /* Eliminar bordes duros */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave y moderna */
+}
+
+.card-title {
+    color: var(--color-primario-oscuro) !important;
+    border-bottom: 2px solid var(--color-gris-claro);
+    padding-bottom: 10px;
+    margin-bottom: 20px !important;
+}
+
+/* Estilo para los campos de formulario */
+.form-label {
+    color: #495057; /* Texto de etiqueta un poco más oscuro */
+    font-weight: 600 !important;
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+
+/* Estilos de validación para el calendario (importante para el JS) */
+.form-control.is-valid {
+    border-color: var(--color-secundario-base) !important;
+    box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+/* === Botón de Reserva (WhatsApp) === */
+#btnReservar {
+    background-color: var(--color-secundario-whatsapp); 
+    border-color: var(--color-secundario-whatsapp);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    transition: background-color 0.3s;
+}
+
+#btnReservar:hover {
+    background-color: var(--color-secundario-base); /* Un poco más oscuro al pasar el mouse */
+    border-color: var(--color-secundario-base);
+}
+
+#btnReservar i {
+    margin-left: 10px;
+}
+
+/* === Alerta de Pago y Confirmación === */
+.alert-warning {
+    background-color: #fff3cd; /* Fondo amarillo muy claro */
+    border-color: var(--color-alerta);
+    color: #856404; /* Texto marrón/oscuro */
+    border-radius: 8px;
+}
+
+.alert-warning hr {
+    border-top-color: var(--color-alerta);
+}
+
+
+/* === Sección de Horarios y Detalles === */
+.bg-light {
+    background-color: var(--color-gris-claro) !important;
+}
+
+.p-3.border.rounded-3.bg-white {
+    background-color: var(--color-blanco) !important;
+    border: 1px solid #ced4da !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.text-secondary {
+    color: #6c757d !important; /* Gris oscuro para subtítulos */
+}
+
+/* Estilos de la Tabla */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table-primary th {
+    background-color: var(--color-primario-base) !important;
+    color: var(--color-blanco);
+    border: none;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #f0f8ff; /* Azul muy pálido para filas alternas */
+}
+
+/* === Pie de Página === */
+footer {
+    background-color: #343a40 !important; /* Gris oscuro profesional */
+    color: var(--color-gris-claro) !important;
+}
